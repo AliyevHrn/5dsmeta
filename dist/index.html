@@ -163,7 +163,7 @@
                                     <li>оценивать стоимость каждого элемента использовать информацию из BIM-проектов в
                                         любой сметной программе</li>
                                 </ul>
-                                <a href="#" class="btn btn_orange">Получить консультацию</a>
+                                <a href="#modal_consult" data-toggle="modal" class="btn btn_orange">Получить консультацию</a>
                             </div>
                         </div>
                     </div>
@@ -990,6 +990,89 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal fade" id="modal_consult">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Оставить заявку</h3>
+                    <h4 class="modal-subtitle">Необходимо заполнить форму</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="" class="modalForm" action="/">
+
+                        <div class="form-item">
+                            <input type="text" class="form-control" required="" placeholder="Ваше имя*">
+                        </div>
+
+                        <div class="form-item">
+                            <input type="text" class="form-control" required="" placeholder="Номер телефона*">
+                        </div>
+
+                        <div class="form-item">
+                            <input type="email" class="form-control is-invalid" required="" placeholder="Email">
+                            <div class="invalid-feedback">Заполните поле</div>
+                        </div>
+
+                        <div class="form-item">
+                            <input type="text" class="party_suggestion form-control suggestions-input" required="" placeholder="Название компании*" value="" >
+                            <div class="invalid-feedback">Заполните поле</div>
+                            <span class="company_input_info">Источники данных - ЕГРЮЛ и ЕГРИП Налоговой службы</span>
+                        </div>
+
+                        <div class="form-item">
+                            <input type="text" class="form-control" required="" placeholder="Должность*">
+                        </div>
+
+                        <div class="form-item__submit">
+                            <input class="btn btn_orange" type="submit" name="web_form_submit" value="Отправить">
+                        </div>
+
+                        <div class="form-agreement">
+                            <p>Поля отмеченные * - обязательны к заполнению</p>
+                            <p>отправляя заполненную форму, вы принимаете условия <a target="_blank" href="/privacy_policy/">политики обработки персональных данных</a> и подписываете <a href="https://csd.ru/soglasie/" target="_blank">заявение-согласие субъекта</a> на передачу его персональных данных третьей стороне.</p>
+                        </div>
+
+                    </form>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalThanksMessage">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Спасибо за регистрацию!</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-desc">
+                            <div class="modal-desc__title">Ссылка на подключение к вебинару будет направлена Вам на электронную почту не позднее чем за 2 дня до начала вебинара.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalErrorMessage">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Произошла ошибка</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-desc">
+                            <div class="modal-desc__title">Повторите попытку немного позже!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 

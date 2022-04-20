@@ -16,6 +16,7 @@ $(function () {
     Tabs.init();
     News.init();
     Partners.init();
+    FaqAccordeon.init();
   }
 
   var Header = {
@@ -203,6 +204,14 @@ $(function () {
       $('.partners__show-all').click(function (event) {
         items.slideDown();
         $(this).hide();
+      });
+    }
+  };
+  var FaqAccordeon = {
+    init: function init() {
+      $('.faq-content-accordeon__title').click(function () {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
       });
     }
   };
